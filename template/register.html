@@ -1,0 +1,18 @@
+{%  load static %}
+
+<html>
+<head>
+</head>
+<link rel="stylesheet" href="{% static "stylesheet/style.css" %}"/>
+<body>
+
+<h1> REGISTRATION FORM</h1>
+<br>
+<img src="{% static "images/abhi.jpg" %}" width="100" height="100" alt="Image Not found"/><br>
+
+<a href="{% url 'doc_reg'%}"> Doctor </a><br>
+<a href="{% url 'pat_reg' %}"> Patient </a>
+</body>
+
+
+</html>

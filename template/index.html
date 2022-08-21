@@ -1,0 +1,11 @@
+<h1>Welcome</h1>
+
+{% if user.is_authenticated %}
+
+<a href="{% url 'logout' %}">Logout</a> <br>
+{% else %}
+<a href="{% url 'register' %}">Register</a> <br>
+<a href="{% url 'doctorlogin' %}">Login Doctor</a>
+<a href="{% url 'patientlogin' %}">Login Patient</a>
+
+{% endif %}
